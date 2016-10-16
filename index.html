@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script defer type="text/javascript" src="hangman.js"></script>
+  <title>Hangman Game</title>
+</head>
+<body>
+  <header>
+    <h1>Let's play Hangman</h1>
+  </header>
+
+  <article id="player1">
+    <h2>Your turn Player 1</h2>
+    <h3>Write a word or phrase for player 2 to guess. You can't use proper nouns such as names, places, and brands:</h3>
+    <div class="form">
+      <input type="text" id="player1-phrase">
+      <input type="submit" id="phrase-button" value="Submit">
+    </div>
+  </article>
+
+  <article id="player2">
+    <h2>Your turn Player 2</h2>
+    <section>
+      <h4>You can miss <span id="lives">5</span> more before you die.<h4>
+    </section>
+    <h3 id="phrase-to-guess">_ _ _ - _ _ _ _  - _ _ _ _ _ _ _</h3>
+    <section>
+      <h3>Write a letter or the exact phrase  to solve:</h3>
+      <div class="form">
+        <input type="text" id="player2-guess">
+        <input type="submit" id="guess-button" value="Submit">
+      </div>
+    </section>
+  </article>
+
+  <footer>
+    <p>Made with (lots of) &#9749;&nbsp; by Diego Castañeda in 2016.</p>
+  </footer>
+</body>
+</html>
